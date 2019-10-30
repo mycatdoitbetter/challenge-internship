@@ -14,6 +14,7 @@ def menu():
     print(60 * "-" + "\n")
 # def to get the image name
 def image():
+    print("After opening the window, Press Esc to go to the next estage.\n")
     image = input("Please, type the name of your image file (.jpg extension): ")
     return image
 # def to get the font name
@@ -85,3 +86,5 @@ while True:
     size = size()
     c_x, c_y = coordinates()
     edition(image, font, name, size, c_x, c_y)
+    cv.destroyAllWindows()
+    break
