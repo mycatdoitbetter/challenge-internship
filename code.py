@@ -40,7 +40,9 @@ def show_image(image):
     image_in = cv.imread(image)
     cv.imshow("Preview", image_in)
     k = cv.waitKey(0)
-    if k == 27: cv.destroyAllWindows()
+    if k == 27:
+        pass
+     
 
 # def to show the font-type
 def show_font(font):
@@ -53,7 +55,9 @@ def show_font(font):
     img = np.array(img_pil)
     cv.imshow("Preview of the font-type", img)
     k = cv.waitKey(0)
-    if k == 27: cv.destroyAllWindows()
+    if k == 27:
+        pass
+      
 
 # def to plot the name on the chosen image
 def edition(image, font, name, size, c_x, c_y):
@@ -66,7 +70,9 @@ def edition(image, font, name, size, c_x, c_y):
     cv.imshow("Final Result", image_out)
     cv.imwrite("Result.jpg",image_out)
     k = cv.waitKey(0)
-    if k == 27 : cv.destroyAllWindows()
+    if k == 27 :
+        pass
+       
 
 # loop to organize and get the data for edition of the image
 while True:
